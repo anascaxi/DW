@@ -57,29 +57,43 @@ nav .opcao:hover{
 }
 
 div.transbox{
-	margin: 30px;
-	background-color: gray;
+	width: 75%;
+	margin: 20px;
+	background-color: rgba(00, 00, 00, 0.2);
 	border: 1px solid white;
-	opacity: 0.2;
-	filter: alpha(opacity=20);
 }
+div .transexual{
+	position: right;
+	width: 25%;
+	margin: 20px;
+	background-color: rgba(00, 00, 00, 0.2);
+	border: 1px solid white;
+}
+
+.caixadolado{
+	float: right;
+	margin: 0px auto;
+	width: auto;
+	height: 400px;
+}
+
 section{
 	clear:both;
 	min-height: 360px;
-	width: 100%;
+	width: auto;
 	margin-top: 0px;
 	opacity: 1.0;
 }
 
 section #topo{
-	width: 1050px;
+	width: 1000px auto;
 	margin: 0px auto;
 	height: 270px;
 }
 
 .arcondicionado{
 	height: 200px;
-	width: 200px;
+	width: 300px;
 }
 .direito{
 	float: right;
@@ -93,7 +107,7 @@ section #topo{
 }
 
 section #titulos{
-	float: left;
+	text-align: center;
 	height: 250px;
 	width: 650px;
 	margin: 0px auto;
@@ -103,8 +117,8 @@ section #titulos{
 h2{
 	text-align: center;
 	margin-top: 0px;
-	margin-bottom: 2  0px;
-	font-size: 40px;
+	margin-bottom: 0px;
+	font-size: 35px;
 }
 
 h3{
