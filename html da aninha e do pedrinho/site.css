@@ -57,28 +57,15 @@ nav .opcao:hover{
 }
 
 div.transbox{
+	clear: none;
 	width: 75%;
-	margin: 20px;
+	margin: 10px;
 	background-color: rgba(00, 00, 00, 0.2);
 	border: 1px solid white;
-}
-div .transexual{
-	position: right;
-	width: 25%;
-	margin: 20px;
-	background-color: rgba(00, 00, 00, 0.2);
-	border: 1px solid white;
-}
-
-.caixadolado{
-	float: right;
-	margin: 0px auto;
-	width: auto;
-	height: 400px;
 }
 
 section{
-	clear:both;
+	float:left;
 	min-height: 360px;
 	width: auto;
 	margin-top: 0px;
@@ -134,7 +121,29 @@ section p{
 	color: white;
 }
 
+aside{
+	float:left;
+	min-height: 0%;
+	width: auto;
+	opacity: 1.0;
+}
+div.caixa{
+	float: left;
+	width: 20%;
+	margin: 10px;
+	background-color: rgba(00, 00, 00, 0.2);
+	border: 1px solid white;
+}
+
+aside p{
+	clear: none;
+	text-align: center;
+	margin: 10px ;
+	color: white;
+}
+
 footer{
+	clear: both;
 	background-color: #005f89;
 	color: #fff;
 	padding: 10px;
