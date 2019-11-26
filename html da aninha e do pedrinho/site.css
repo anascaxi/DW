@@ -58,7 +58,7 @@ nav .opcao:hover{
 
 div.transbox{
 	clear: none;
-	width: 75%;
+	width: 70%;
 	margin: 10px;
 	background-color: rgba(00, 00, 00, 0.2);
 	border: 1px solid white;
@@ -121,18 +121,20 @@ section p{
 	color: white;
 }
 
-aside{
-	float:left;
-	min-height: 0%;
-	width: auto;
-	opacity: 1.0;
-}
 div.caixa{
-	float: left;
+	float: right;
 	width: 20%;
 	margin: 10px;
 	background-color: rgba(00, 00, 00, 0.2);
 	border: 1px solid white;
+}
+
+aside{
+	position: relative;
+	float: right;
+	min-height: 0%;
+	width: auto;
+	opacity: 1.0;
 }
 
 aside p{
@@ -156,6 +158,7 @@ footer{
 }
 
 .tituloTabela{
+	background-image: linear-gradient(to right, hotpink, yellow, green, orange, pink);
 	text-align: center;
 	font-size: 30px;
 	font-weight: bold;
@@ -177,17 +180,17 @@ tr,td,th{
 tr,td{
 	font-size: 14px;
 }
-tr:nth-child(even){
-	background-color: #b1ccf5;
+thead,tbody{
+	background-color: lightgray;
 }
-tr:nth-child(odd){
-	background-color: #83afd3;
+th #cores{
+	background-color: hotpink;
 }
-
 .faleconosco{
 	width: 300px;
 	margin: 0px auto;
 	font-weight: bold;
+	color: white;
 	margin-bottom: 10px;
 }
 .faleconosco input, .faleconosco textarea, .faleconosco select{
