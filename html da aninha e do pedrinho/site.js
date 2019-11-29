@@ -26,34 +26,8 @@ function validaFaleConosco() {
 
 function verificaMotivo(motivo){
     var elemento = document.getElementById("opcaoProduto");
-    if(motivo=='PR'){
-        var select = document.createElement("select");
-        select.setAttribute("name","selproduto");
-
-        var option = document.createElement("option");
-        option.setAttribute("value","");
-
-        var texto = document.createTextNode("Escolha");
-        option.appendChild(texto);
-        select.appendChild(option);
-
-        var option = document.createElement("option");
-        option.setAttribute("value","AR");
-
-        var texto =document.createTextNode("Ar Condicionado");
-        option.appendChild(texto);
-        select.appendChild(option);
-
-        var option = document.createElement("option");
-        option.setAttribute("value","AQ");
-
-        var texto = document.createTextNode("Aquecedor");
-        option.appendChild(texto);
-        select.appendChild(option);
-        elemento.appendChild(select);
-    }else{
-        if(elemento.firstChild){
-            elemento.removeChild(elemento.firstChild)
-        }
+    if(elemento.firstChild){
+        elemento.removeChild(elemento.firstChild)
     }
 }
+

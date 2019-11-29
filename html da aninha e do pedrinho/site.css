@@ -12,6 +12,7 @@ header{
 	height: 170px;
 	background-color: #808080;
 	border-style: round;
+	border-radius: 10px;
 }
 
 header img{
@@ -22,12 +23,6 @@ header img{
 	height: 170px;
 }
 
-header h1{
-	float: left;
-	margin: 50px 0 0 30px;
-	font-size: 60px;
-	color: #ffffff;
-}
 
 nav{
 	clear: both;
@@ -56,23 +51,7 @@ nav .opcao:hover{
 	background-color: darkgray;
 }
 
-div.transbox{
-	clear: none;
-	width: 70%;
-	margin: 10px;
-	background-color: rgba(00, 00, 00, 0.2);
-	border: 1px solid white;
-}
-
-section{
-	float:left;
-	min-height: 360px;
-	width: auto;
-	margin-top: 0px;
-	opacity: 1.0;
-}
-
-section #topo{
+#topo{
 	width: 1000px auto;
 	margin: 0px auto;
 	height: 270px;
@@ -93,7 +72,7 @@ section #topo{
 	width: 800px;
 }
 
-section #titulos{
+#titulos{
 	text-align: center;
 	height: 250px;
 	width: 650px;
@@ -101,11 +80,13 @@ section #titulos{
 	color: white;
 }
 
+
 h2{
 	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	font-size: 35px;
+	color: white;
 }
 
 h3{
@@ -114,51 +95,63 @@ h3{
 	font-size: 20px;
 }
 
-section p{
+p{
 	clear: both;
 	text-align: center;
 	margin: 10px 80px;
 	color: white;
 }
 
-div.caixa{
-	float: right;
-	width: 20%;
-	margin: 10px;
-	background-color: rgba(00, 00, 00, 0.2);
-	border: 1px solid white;
-}
-
-aside{
-	position: relative;
-	float: right;
-	min-height: 0%;
-	width: auto;
-	opacity: 1.0;
-}
-
-aside p{
-	clear: none;
-	text-align: center;
-	margin: 10px ;
-	color: white;
-}
-
 footer{
 	clear: both;
-	background-color: #005f89;
+	background-color: #808080;
 	color: #fff;
 	padding: 10px;
 	text-align: center;
+	border-radius: 10px;
 }
 
+.index{
+	margin: 10px;
+}
+
+.cu{
+	margin: 10px;
+	border: 1px solid white;
+}
+.transexual{
+	border: 1px solid white;
+	
+}
 .tabelaProdutos{
+	width: 900px;
 	margin: 10px auto;
 	text-align: center;
+	border: 1px solid white;
 }
 
 .tituloTabela{
-	background-image: linear-gradient(to right, hotpink, yellow, green, orange, pink);
+	background-image: linear-gradient(to right, deeppink, #ffff00, #00ff00, #ffa500, pink);
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	padding: 5px;
+	border: transparent;
+}
+
+.tituloTabela1{
+	background-image: linear-gradient(to right, red, blue, purple);
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	padding: 5px;
+	border: transparent;
+}
+
+.tituloTabela2{
+	background-image: linear-gradient(to right, #800020, #ffc59e, #40E0D0, #000000);
 	text-align: center;
 	font-size: 30px;
 	font-weight: bold;
@@ -173,7 +166,7 @@ footer{
 }
 
 tr,td,th{
-	border: 1px solid #B0C4DE;
+	border: 1px solid rgb(255, 255, 255);
 	padding: 5px;
 }
 
@@ -183,8 +176,12 @@ tr,td{
 thead,tbody{
 	background-color: lightgray;
 }
-th #cores{
-	background-color: hotpink;
+.nota{
+	float: center;
+	font-size: 12px;
+}
+.aiai{
+	background-color: rgba(00,00,00,0.2)
 }
 .faleconosco{
 	width: 300px;
@@ -205,7 +202,76 @@ th #cores{
 .faleconosco button{
 	width: 30%;
 	margin: 0 10%;
-	background-color: #b1ccf5;
+	background-color: #808080;
 	font-weight: bold;
 	font-size: 16px;
+}
+.tabelaAA{
+	width: 900px;
+	height: 900px;
+	margin: 10px auto;
+	text-align: center;
+	border: hidden;
+}
+
+.gallery {
+	position: 500px;
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	clear: none;
+	width: 180px;
+}
+  
+.gallery:hover {
+	border: 1px solid #777;
+}
+  
+.gallery img{
+	margin: 5px;
+	width: 150px;
+	height: 145px;
+}
+  
+.desc{
+	padding: 15px;
+	text-align: center;
+	color: white;
+}
+.bordasumida{
+	border: hidden;
+}
+.gall{
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: center;
+	clear: both;
+	width: 900px;
+}
+
+.gall:hover{
+	border: 1px solid #777;
+}
+  
+.gall img{
+	margin: 5px;
+	width: 800px;
+	height: 410px;
+}
+.gal{
+	margin: 24px 50px;
+	border: 1px solid #ccc;
+	float: center;
+	clear: both;
+	width: 900px;
+}
+
+.gal:hover{
+	border: 1px solid #777;
+}
+  
+.gal img{
+	margin: 5px;
+	width: 800px;
+	height: 410px;
 }
