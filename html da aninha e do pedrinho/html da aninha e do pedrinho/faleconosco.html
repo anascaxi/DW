@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='PT-BR'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name = 'description' content='Fã Clube do LOONA'>
+        <meta name='keywords' content='K-POP, LOONA, Coreia, Heejin, Hyunjin, Haseul, Yeojin, ViVi, Kim Lip, Jinsoul, Choerry, Yves, Chuu, Gowon, Olivia Hye, LOONA 1/3, ODD EYE CIRCLE, yyxy'>
+        <meta name='author' content='LOONA'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>LOOΠΔ</title>
+        <link rel='stylesheet' type='text/css' href='site.css'>
+        <script src='site.js'></script>
+    </head>
+    <body>
+        <header>
+            <img src='/home/aluno/Área de Trabalho/html da aninha e do pedrinho/logo.png' alt='Logo do LOONA'>
+            <br>
+            <nav>
+                <a href='index.html'><div class='opcao'>Home</div></a>
+                <a href='produtos.html'><div class='opcao'>LOONA</div></a>
+                <a href='faleconosco.html'><div class='opcao'>Inscreva-se!</div></a>
+            </nav>
+        </header>
+        <section>
+            <div id='topo' align='center'>
+                <img alt='Imagem de um ar condicionado' src='/home/aluno/Área de Trabalho/html da aninha e do pedrinho/LOONAum.jpg' class='topo2'>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Inscreva-se!!</h2>
+            <p>Gostou do LOONA? Se inscreva no fã-clube para receber todas as notícias do grupo e se tornar o orbit mais atualizado desse Brasil!</p>
+            <form name='frmfaleconosco' method='post' action='#' onsubmit='returnvalidaFaleConosco()'>
+            <fieldset class='faleconosco'>
+                <legend>Dados Pessoais:</legend>
+
+                <label for='nome'>Nome:</label>
+                <input type='text' name='txtnome' id='nome' placeholder='Digite o seu nome completo:'>
+
+                <label for='fone'>Telefone:</label>
+                <input type='text' name='txtfone' id='fone' placeholder='Digite seu telefone:'>
+                
+                <label for='email'>Email:</label>
+                <input type='email' name='txtemail' id='email' placeholder='Digite seu email:'>
+
+                <label dor='data_nascimento'>Data Nascimento:</label>
+                <input type='date' name='txtdata_nascimento' id='data_nascimento'>
+            
+                <label for="motivo">Sexo</label>
+                
+                <select name='selmotivo' id='motivo' onchange='verificaMotivo(this.value)'>
+                
+                    <option value=''>Escolha</option>
+                    <option value='RE'>Feminino</option>
+                    <option value='SU'>Masculino</option>
+                </select>
+            </fieldset>
+
+            <fieldset class='faleconosco'>
+                <legend>Motivo da Inscrição:</legend>
+                <label for="motivo">Motivo:</label>
+                
+                <select name='selmotivo' id='motivo2' onchange='verificaMotivo(this.value)'>
+                
+                    <option value=''>Escolha</option>
+                    <option value='RE'>Conheço o LOONA faz tempo e quero uma nova fonte de notícias e atualizações sobre o grupo.</option>
+                    <option value='SU'>Acabei de conhecer o LOONA e quero uma fonte de notícias e atualizações sobre o grupo.</option>
+                </select>
+
+                <div id='opcaoProduto'></div>
+                <label for='comentario'>Comentário:</label>
+                <textarea name='txacomentario' id='comentario'></textarea>
+                <button type='reset' onclick='verificaMotivo(null)'>Limpar</button><button type='submit'>Enviar</button>
+            </fieldset>
+            </form>
+        </section>
+        <footer>Copyright &copy; LOOΠΔ 2019 </footer>
+    </body>
+</html>
